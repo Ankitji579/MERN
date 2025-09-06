@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        background-color: beige;
+      }
+      header {
+        background: #333;
+        color: #fff;
+        padding: 10px 0;
+        text-align: center;
+      }
+      nav ul {
+        list-style: none;
+        padding: 0;
+      }
+      nav ul li {
+        display: inline;
+        margin: 0 10px;
+      }
+      main {
+        display: flex;
+        justify-content: space-between;
+      }
+      article {
+        flex: 3;
+        padding: 20px;
+      }
+      aside {
+        flex: 1;
+        background: #f4f4f4;
+        padding: 20px;
+      }
+      footer {
+        text-align: center;
+        padding: 10px 0;
+        background: #333;
+        color: #fff;
+      }
+    </style>
+    <title>Gym Workout</title>
+  </head>
+  <body>
+    <header>
+        <h1>Gym Workout</h1>
+        <nav>
+          <ul>
+            <li><a href="#home" style="color: rgb(255, 255, 255)">Home</a></li>
+            <li><a href="#about" style="color: white">About</a></li>
+            <li><a href="#contact" style="color: white">Contact</a></li>
+          </ul>
+        </nav>
+    </header>
+    <main>
+      <article>
+        <h2>Article Title</h2>
+        <p>This is the main content of the article.</p>
+      </article>
+      <aside>
+        <h3>Related Links</h3>
+        <ul>
+          <li><a href="#link1">Link 1</a></li>
+          <li><a href="#link2">Link 2</a></li>
+        </ul>
+      </aside>
+    </main>
+    <footer>
+      <p>&copy; 2023 Website Name. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
+<!--
+    Semantics in HTML refers to the use of HTML elements that convey meaning about the content they contain. 
+    Semantic elements clearly describe their meaning in a human- and machine-readable way. 
+    Using semantic HTML improves accessibility, SEO, and maintainability of web pages.
+
+    Examples of semantic HTML elements include:
+    - <header>: Represents introductory content or a set of navigational links.
+    - <nav>: Represents a section of a page that links to other pages or to parts within the page.
+    - <main>: Represents the main content of the <body> of a document.
+    - <article>: Represents a self-contained composition in a document, page, application, or site.
+    - <section>: Represents a standalone section of content which doesn't have a more specific semantic element to represent it.
+    - <aside>: Represents content that is tangentially related to the content around it.
+    - <footer>: Represents the footer for its nearest sectioning content or sectioning root element.
+
+    Non-semantic elements like <div> and <span> do not convey any meaning about their content and are used primarily for styling purposes.
+
+    Example of semantic HTML structure:
+    <header>
+        <h1>Website Title</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <article>
+            <h2>Article Title</h2>
+            <p>This is the main content of the article.</p>
+        </article>
+        <aside>
+            <h3>Related Links</h3>
+            <ul>
+                <li><a href="#link1">Link 1</a></li>
+                <li><a href="#link2">Link 2</a></li>
+            </ul>
+        </aside>
+    </main>
+    <footer>
+        <p>&copy; 2023 Website Name. All rights reserved.</p>
+    </footer>
+-->

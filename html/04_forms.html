@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <h1>Login Form</h1>
+    <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name"><br><br>
+        <label for="email">Password:</label>
+        <input type="password" id="email" name="email" placeholder="Enter your password"><br><br>
+        <label for="dob">DOB:</label>
+        <input type="date" id="dob" name="dob"><br><br>
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+    </form>
+
+    <div>
+        <h2>Learning Form</h2>
+        <form action="">
+            <label for="email">Email:</label>
+            <textarea rows="4" cols="50" type="email" id="email" name="email" placeholder="Enter your email"></textarea><br><br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password"><br><br>
+            <button type="submit">Submit</button>
+            <!-- <button type="reset">Reset</button> -->
+             <!-- we can also use checkbox-->
+        </form>
+    </div>
+
+    <div>
+        <label for="games">Games</label>
+        <input type="checkbox" id="games" name="games" value="chess"> Chess
+        <input type="checkbox" id="games" name="games" value="football"> Football
+        <input type="checkbox" id="games" name="games" value="cricket"> Cricket
+    </div>
+        <div>
+        <label for="games">Games</label>
+        <select id="games" name="games">
+            <option value="chess">Chess</option>
+            <option value="football">Football</option>
+            <option value="cricket">Cricket</option>
+        </select>
+        <label for="months">Months</label>
+        <input type="month" id="months" name="months">
+        <label for="files">Files</label>
+        <input type="file" id="files" name="files">
+        <label for="colors">Colors</label>
+        <input type="color" id="colors" name="colors">
+    </div>
+
+    <div>
+        <h2>Selected Games</h2>
+        <ol>
+            <li>Chess</li>
+            <li>Football</li>
+            <li>Cricket</li>
+        </ol>
+    </div>
+
+    <div>
+        <h2>Unselected Games</h2>
+        <ul>
+            <li>Basketball</li>
+            <li>Tennis</li>
+            <li>Baseball</li>
+        </ul>
+    </div>
+
+</body>
+</html>
+
+<!--
+    <form> tag is used to create an HTML form for user input.
+    <input> tag is used to create various types of input fields, such as text, password, date, checkbox, radio, etc.
+    <label> tag is used to define labels for input elements, improving accessibility and usability.
+    <button> tag is used to create clickable buttons, such as submit and reset buttons.
+    Other form elements include <textarea> for multi-line text input and <select> for dropdown menus.
+-->
