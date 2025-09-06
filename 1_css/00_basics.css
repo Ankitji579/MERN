@@ -1,0 +1,24 @@
+body {
+  background-color: lightblue;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 20px;
+  text-align: center;
+}
+h1 {
+  color: darkblue;
+}
+p {
+  color: darkgreen;
+  font-size: 18px;
+}
+a {
+  color: darkred;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+/* --- IGNORE --- */
+/* --- IGNORE --- */
