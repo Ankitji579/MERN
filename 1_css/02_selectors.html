@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Selectors</title>
+    <link rel="stylesheet" href="02_selectors.css" />
+  </head>
+  <body>
+    <h1>Selectors</h1>
+    <h2>Types of CSS Selectors</h2>
+    <ol>
+      <li>Universal Selector: * { }</li>
+      <li>Type Selector: div { }</li>
+      <li>Class Selector: .className { }</li>
+      <li>ID Selector: #idName { }</li>
+      <li>Attribute Selector: [type="text"] { }</li>
+      <li>Child Selector: parent > child { }</li>
+      <li>Descendant Selector: parent descendant { }</li>
+      <li>Adjacent Sibling Selector: sibling + child { }</li>
+      <li>General Sibling Selector: sibling ~ child { }</li>
+      <li>Descendant Selector: parent > child { }</li>
+      <li>Pseudo-class Selector: a:hover { }</li>
+      <li>Pseudo-element Selector: p::first-line { }</li>
+    </ol>
+    <h2>Examples</h2>
+    <p class="intro">This is a paragraph with a class selector.</p>
+    <p id="unique">This is a paragraph with an ID selector.</p>
+    <a href="#">This is a link with a pseudo-class selector.</a>
+    <div class="container">
+      <p>This is a paragraph inside a div with a class selector.</p>
+    </div>
+    <div id="container1">
+      <p>This is another paragraph inside the same div with a class selector.</p>
+    </div>
+    <input type="text"> This is an input field with an attribute selector.</input>
+
+    <article>
+        <h2>Article Title</h2>
+        <p>This is a paragraph inside an article element.</p>
+        <p class="highlight">This is a highlighted paragraph inside the article.</p>
+        <p id="summary">This is a summary paragraph with an ID selector.</p>
+        <a href="#">This is a link inside the article with a pseudo-class selector.</a>
+    </article>
+
+  </body>
+</html>
+
+<!-- 
+    CSS Selectors are patterns used to select and style HTML elements.
+    They define which elements the CSS rules will apply to.
+    Different types of selectors allow for targeting elements based on their type, class, ID, attributes, and more.
+-->

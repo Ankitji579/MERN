@@ -1,0 +1,118 @@
+/* *{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    } */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: beige;
+}
+input[type="text"]{
+    margin-top: 20px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+h1 {
+    color: darkblue;
+    text-align: center;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+}
+a {
+    color: darkred;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+.container {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-top: 20px;
+}
+* {
+    color: blue;
+}
+div {
+    border: 1px solid black;
+    padding: 10px;
+    margin: 10px 0;
+}
+.intro {
+    font-weight: bold;
+}
+#unique {
+    color: red;
+}
+[href] {
+    text-decoration: none;
+}
+.container > p {
+    background-color: lightgray;
+}
+#container1 p {
+    font-style: italic;
+}
+a:hover {
+    color: green;
+    background-color: lightgray;
+    text-decoration: underline;
+    padding: 14px;
+    margin: 14px;
+}
+p::first-line {
+    text-transform: uppercase;
+}
+article p {
+    font-size: 18px;
+    border: 2px solid orange;
+}
+article {
+    border: 5px dashed red;
+    padding: 10px;
+    margin-top: 20px;
+}
+ol > li {
+    margin-bottom: 5px;
+    background-color: limegreen;
+}
+div.container > p {
+    background-color: lightblue;
+}
+div >p{
+    background-color: yellow;
+}
+h1 + p {
+    font-size: 20px;
+    color: purple;
+}
+h1 ~ p {
+    font-size: 18px;
+    color: teal;
+}
+p::first-letter {
+    font-size: 24px;
+    color: orange;
+    font-weight: bold;
+}
+p::before {
+    content: "Note: ";
+    font-weight: bold;
+    color: red;
+}
+p::after {
+    content: " [End of paragraph]";
+    font-style: italic;
+    color: gray;
+}
+h1,h2,h3 {
+    font-family: 'Courier New', serif;
+    margin-bottom: 10px;
+}
