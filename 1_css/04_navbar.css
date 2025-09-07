@@ -1,0 +1,99 @@
+body {
+  /* margin: 0;
+  padding: 0;
+  box-sizing: border-box; */
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background-color: black;
+  color: aliceblue;
+}
+a {
+  text-decoration: none;
+  color: green;
+}
+.nav-container {
+  /* display: flex; */
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  padding: 10px 20px;
+  border-radius: 5px;
+  /* position: relative; */
+  /* overflow: hidden; */
+}
+
+/* .nav1 ul ,.nav2 ul, .nav3 ul {
+  list-style-type: none;
+  display: flex;
+} */
+
+.nav1 ul {
+  background-color: grey;
+  color: aliceblue;
+  display: flex;
+  gap: 15px;
+  padding: 10px;
+  list-style-type: none;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.nav1 a {
+  color: aliceblue;
+  font-weight: bold;
+  text-decoration: none;
+  background-color: orange;
+  padding: 5px 10px;
+  border-radius: 5px;
+  position: relative;
+}
+
+.nav1 li {
+  list-style-type: none;
+  display: inline;
+}
+
+.nav1 a:hover {
+  background-color: yellow;
+  color: black;
+}
+.nav1 a::after {
+  content: "abc";
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  background-color: blue;
+  color: white;
+  bottom: 0;
+  left: 0;
+  font-weight: bold;
+  transform: scaleX(0);
+  transition: transform 0.3s ease-in-out 0.3s;
+}
+.nav1 a:hover::after {
+  transform: scaleX(1);
+  color: black;
+}
+.nav1 .login-btn {
+  background-color: blue;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.nav2 {
+  background-color: yellowgreen;
+  color: aliceblue;
+  display: flex;
+  gap: 15px;
+  padding: 10px;
+}
+
+.nav3 {
+  background-color: chocolate;
+  color: blue;
+  display: flex;
+  gap: 15px;
+  padding: 10px;
+}
