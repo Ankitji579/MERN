@@ -1,0 +1,153 @@
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100%;
+}
+img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-top: 50px;
+}
+
+.container{
+    text-align: center;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 20px;
+    /* background-color: rgb(112, 151, 58); */
+    /* background: linear-gradient(135deg, red, orange, yellow, green, blue, indigo, violet); */
+    /* background-color: rgba(240, 248, 255, 0.939); */
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center
+} */
+/* .content{
+    padding: 2rem;
+    margin-top: 20px;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* background-color: rgb(156, 42, 42); */
+/* } */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'DM Sans', sans-serif;
+}
+
+body {
+    font-family: 'DM Sans', sans-serif;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+.container {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.content {
+    background: #fff;
+    border-radius: 16px;
+    padding: 2.5rem 2rem;
+    text-align: center;
+    color: #333;
+    max-width: 420px;
+    width: 100%;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.content:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.2);
+}
+
+.image {
+    width: 180px;
+    height: auto;
+    border-radius: 12px;
+    margin-bottom: 1.5rem;
+}
+
+.content h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 0.75rem;
+    color: #1e3c72;
+}
+
+.content p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 1.5rem;
+    padding: 0 1rem;
+}
+
+/* Input Fields */
+#notify-form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+
+}
+.a_btn {
+    display: inline-block;
+    /* padding: 0.75rem 1.25rem;
+    border-radius: 8px;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background 0.3s ease, transform 0.2s ease; */
+
+    margin-bottom: 1.5rem; /* space between button and input fields */
+}
+input, textarea {
+    padding: 0.75rem 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+    width: 100%;
+}
+
+input:focus, textarea:focus {
+    border-color: #2a5298;
+    box-shadow: 0 4 6px rgba(42, 82, 152, 0.3);
+    outline: none;
+}
+
+/* Button */
+#notify-btn {
+    padding: 0.75rem;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #fff;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    cursor: pointer;
+    transition:  0.3s ease, transform 0.2s ease;
+    width: 100%; /* ensures button sits below, not inline */
+}
+
+#notify-btn:hover {
+    background: linear-gradient(135deg, #2a5298, #1e3c72);
+    transform: translateY(-2px);
+}
+
+
