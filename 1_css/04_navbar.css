@@ -83,17 +83,82 @@ a {
 }
 
 .nav2 {
-  background-color: yellowgreen;
+  border: 2px solid royalblue;
+  background-color: #343a40;
   color: aliceblue;
-  display: flex;
-  gap: 15px;
+  width: 300px;
+  height: auto;
   padding: 10px;
+}
+.nav2 ul {
+  list-style-type: none;
+  padding: 0;
+}
+.nav2 li {
+  margin-bottom: 10px;
+}
+.nav2 a {
+  color: aliceblue;
+  text-decoration: none;
+}
+.nav2 a:hover {
+  padding: 10px;
+  margin: 10px 0;
+  display: block;
+  text-decoration: underline;
+  background-color: #006fdf;
+  color: aliceblue;
+  transition: all 0.3s ease-in-out;
+}
+.nav2 .login-btn {
+  background-color: blue;
+  color: aliceblue;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.nav2 .login-btn:hover {
+  background-color: rgb(32, 75, 191);
+  color: aliceblue;
+  border: 1px solid rgb(47, 47, 181);
 }
 
 .nav3 {
-  background-color: chocolate;
+  background-color: rgb(60, 89, 105);
+  width: 100%;
+  height: auto;
   color: blue;
-  display: flex;
-  gap: 15px;
   padding: 10px;
+}
+.nav3 a {
+  color: aliceblue;
+  text-decoration: none;
+  padding: 10px;
+}
+
+.nav3 ul {
+  color: aliceblue;
+  list-style-type: none;  
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0px;
+}
+.nav3 .dropdown {
+  position: relative; /* so absolute submenu is anchored here */
+  min-width: 100px;
+}
+
+.nav3 .dropdown-content{
+  display: none;
+  background-color: #6d0000;
+  color: aliceblue;
+  min-width: 100px;
+  padding: 5px 0px;
+  line-height: 1.6; 
+}
+.nav3 .dropdown:hover .dropdown-content{
+  display: block;
+  position: absolute;
+  background-color: rgb(77, 159, 203);
 }
