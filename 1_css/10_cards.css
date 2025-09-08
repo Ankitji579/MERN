@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --body-color: #020318;
+    --text-color-light: #FFFFFF;
+
+    --body-font: 'Poppins', sans-serif;
+    --biggest-font-size: 2rem;
+    --h1-font-size: 1.5rem;
+    --normal-font-size: .938rem;
+    --smaller-font-size: .75rem;
+
+    --filter-blue: 100;
+
+    --box-shadow-inset: inset 0 22px 56px -36px rgba(255, 255, 255, 0.5), inset 0 4px 5px -4px rgba(255, 255, 255, 1), inset 0 -31px 34px -32px rgba(96, 68, 144, 0.3), inset 0 39px 50px -34px rgba(202, 172, 255, 0.3), inset 0 2px 9px rgba(154, 146, 210, 0.3), inset 0 1px 10px rgba(227, 222, 255, 0.2);
+        --box-shadow-inset-hover: inset 0 19px 28px -18px rgba(255, 255, 255, 0.5), inset 0 4px 6px -3px rgba(255, 255, 255, 1), inset 0 -51px 44px -42px rgba(96, 68, 144, 0.3), inset 0 59px 60px -32px rgba(202, 172, 255, 0.3), inset 0 4px 16px rgba(154, 146, 210, 0.3), inset 0 2px 25px rgba(227, 222, 255, 0.23);
+    --box-shadow-inset-button: inset 0 2px 7px -9px rgba(255, 255, 255, 0.5), inset 0 1px 2px -1px rgba(255, 255, 255, 1), inset 0 -20px 16px -32px rgba(96, 68, 144, 0.3), inset 0 28px 25px -24px rgba(202, 172, 255, 0.3), inset 0 1px 4px rgba(154, 146, 210, 0.3), inset 0 1px 10px rgba(227, 222, 255, 0.2);
+        --box-shadow-inset-button-hover: inset 0 4px 7px -4px rgba(255, 255, 255, 0.5), inset 0 1px 2px -1px rgba(255, 255, 255, 1), inset 0 -20px 16px -32px rgba(96, 68, 144, 0.3), inset 0 28px 25px -20px rgba(202, 172, 255, 0.3), inset 0 1px 4px rgba(154, 146, 210, 0.3), inset 0 1px 16px rgba(227, 222, 255, 0.2);
+    --drop-shadow: 0 0 8px rgba(161, 165, 247, 0.8);
+        --drop-shadow-hover: 0 0 14px rgba(161, 165, 247, 0.8);
+    --text-shadow: 0 0 8px rgba(161, 165, 247, 0.8);
+        --text-shadow-hover: 0 0 14px rgba(161, 165, 247, 0.8);
+
+}
+
+@media screen and (max-width: 1024px) {
+    :root { --normal-font-size: 1rem; }
+}
+
+*,::before,::after { box-sizing: border-box; }
+body { margin: 0; font-family: var(--body-font); font-size: var(--normal-font-size); background-color: var(--body-color); }
+h1, p { margin: 0; }
+a { text-decoration: none; }
+
+.bd-container { max-width: 1024px; margin-left: 1.5rem; margin-right: 1.5rem; }
+
+.neon, .neon-container { display: grid; align-items: center; }
+    .neon { padding: 2.5rem 0; }
+    .neon-container { grid-template-columns: repeat(auto-fit, minmax(312px, 1fr)); row-gap: 3.5rem; column-gap: 2.5rem; }
+.neon-card { background-color: rgba(255, 255, 255, 0.01); color: var(--text-color-light); box-shadow: var(--box-shadow-inset); backdrop-filter: var(--filter-blue); padding: 3.5rem 1.5rem 2rem; border-radius: 3rem; text-align: center; }
+    .neon-card:hover { box-shadow: var(--box-shadow-inset-hover); }
+.neon-icon { width: 120px; fill: var(--text-color-light); filter: drop-shadow(var(--drop-shadow)); margin-bottom: 0.25rem; }
+    .neon-card:hover .neon-icon { filter: drop-shadow(var(--drop-shadow-hover)); }
+.neon-title, .neon-description { text-shadow: var(--text-shadow); }
+    .neon-title { font-size: var(--biggest-font-size); margin-bottom: 0.25rem; }
+    .neon-description { text-align: initial; margin-bottom: 1.5rem; }
+        .neon-card:hover .neon-title, .neon-card:hover .neon-description { text-shadow: var(--text-shadow-hover); }
+.neon-button-icon { width: 1.2rem; margin-left: 0.5rem; fill: var(--text-color-light); filter: drop-shadow(var(--drop-shadow)); }
+.neon-button { box-shadow: var(--box-shadow-inset-button); color: var(--text-color-light); text-shadow: var(--text-shadow); display: flex; align-items: center; justify-content: center; padding: 1.25rem; border-radius: 1rem; }
+    .neon-button:hover { box-shadow: var(--box-shadow-inset-button-hover); }
+.neon-card, .neon-icon, .neon-title, .neon-description, .neon-button { transition: 0.5s; }
+
+/*Media Queries*/
+@media screen and (max-width: 359px) {
+    .neon-container { grid-template-columns: 1fr; }
+    .neon-card { padding: 2rem 1rem 1.5rem; }
+    .neon-icon { width: 80px; }
+    .neon-title { font-size: var(--h1-font-size); }
+    .neon-description { font-size: var(--smaller-font-size); }
+    .neon-button { padding: 1rem; font-size: var(--smaller-font-size); border-radius: 0.6rem; }
+    .neon-button-icon { width: 1rem; }
+}
+
+@media screen and (min-width: 1024px) {
+    .bd-container { margin-left: auto; margin-right: auto; }
+    .neon { height: 100vh; } 
+}
