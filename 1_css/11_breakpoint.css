@@ -1,0 +1,52 @@
+body {
+    background-color: rgb(0, 0, 0);
+    font-family: Arial, sans-serif;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    color: white;
+}
+h1{
+    text-align: center;
+    margin-top: 20%;
+    background-color: grey;
+    color: black;
+}
+.responsive-div {
+    width: 100%;
+    max-width: 1500px;
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    background-color: rgb(131, 0, 133);
+}
+/* 
+@media only screen and (max-width: 600px) {
+    body {
+        background-color: lightblue;
+    }
+} */
+    
+@media (max-width:600px) {
+    .responsive-div {
+        background-color: green;
+    }
+    body{
+        background-color: lightblue;
+    }
+    h1{
+        color: red;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 800px) {
+    .responsive-div {
+        background-color: blue;
+    }
+    body{
+        background-color: lightgreen;
+    }
+    h1{
+        color: white;
+    }
+}
