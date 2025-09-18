@@ -1,0 +1,41 @@
+body {
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+}
+/* Carousel styling */
+.carousel-item {
+  height: 50vh; /* adjust height */
+}
+.carousel-item img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover; /* ensures image fills without distortion */
+  border-radius: 8px;
+}
+/* Card styling */
+.card {
+  background-color: #111;
+  color: #fff;
+  border: 1px solid #444;
+  border-radius: 10px;
+  margin: 15px;
+  text-align: center;
+}
+.card-title {
+  font-weight: bold;
+  text-transform: lowercase;
+}
+.btn-watch {
+  background-color: #224488;
+  color: #fff;
+  border-radius: 6px;
+  font-weight: bold;
+}
+footer {
+  margin-top: 150px;
+  padding: 15px;
+  background-color: #111;
+  border-top: 1px solid #444;
+  font-size: 14px;
+}
