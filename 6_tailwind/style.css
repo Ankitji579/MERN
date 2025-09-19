@@ -1,1 +1,17 @@
 @import "tailwindcss";
+
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
+/* no longer used in tailwind 4 */
+
+@layer base {
+  body {
+    @apply font-sans; /* will use the first available font in the stack */
+  }
+}
+@layer components {
+  .make {
+    @apply bg-purple-200 p-4 rounded-lg;
+  }
+}

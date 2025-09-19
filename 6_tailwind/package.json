@@ -1,6 +1,11 @@
 {
   "dependencies": {
     "@tailwindcss/cli": "^4.1.13",
-    "tailwindcss": "^4.1.13"
+    "tailwindcss": "^4.1.13",
+    "type": "module"
+  },
+  "scripts": {
+    "dev": "tailwindcss -i ./style.css -o ./src/output.css --watch",
+    "build": "tailwindcss -i ./style.css -o ./src/output.css --minify"
   }
 }
